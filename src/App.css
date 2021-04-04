@@ -50,8 +50,10 @@
   left: 0;
   bottom: 0;
   width: 100%;
-  color: white;
+  color: #44342c;
   text-align: center;
+  margin-bottom: 10%;
+  font-size: calc(10px + 2vmin);
 }
 .App-logo {
   height: 30vmin;
@@ -70,16 +72,22 @@
   /* background-color: #f8ad59; */
   /* background-color: #0088CC; */
   /* min-height: 100vh; */
-  margin-top: 3%;
+  margin-top: 5%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  align-items: flex-start;
+  /* align-items: flex-start; */
+  align-items: center;
   justify-content: right;
   font-size: calc(10px + 2vmin);
   color: #f8ad59;
-  width: 45%;
+  /* width: 45%; */
   text-align: right;
+}
+@media (max-width: 1024px) {
+  .App-header {
+    margin-top: 12%;
+  }
 }
 
 @keyframes App-logo-spin {
@@ -92,17 +100,20 @@
 }
 
 input {
+  /* color: #f08753; */
+  color: #44342c;
   display: inline-block;
   font-size: 1em;
   margin-bottom: 1em;
   padding: 0.25em 0.25em;
   width: 15em;
+  border-color: rgba(0, 0, 0, 0.555);
   border-radius: 12px;
 }
 
 button {
   background-color: #0f77b8;
-  border: 0.5px solid #0f77b8;
+  border: 2px solid #0f77b8;
   border-radius: 12px;
   color: #ffffff;
   display: inline-block;
@@ -114,37 +125,26 @@ button {
   padding: 0.25em;
   width: auto;
 }
-
-.button:active,
+input:focus {
+  outline: 0;
+  border: 2px solid rgb(0, 0, 0);
+}
+button:focus {
+  outline: 0;
+  border: 2px solid rgb(0, 0, 0);
+}
+/* .button:active,
 .button:focus,
 .button:hover {
   background-color: #005580;
   border-color: #005580;
   color: #ffffff;
   text-decoration: none;
-}
-
+} */
+/*
 .button:active {
-  box-shadow: inset 0 0.15625em 0.25em rgba(0, 0, 0, 0.15),
+  border-color: white;
+  /* box-shadow: inset 0 0.15625em 0.25em rgba(0, 0, 0, 0.15),
     0 1px 0.15625em rgba(0, 0, 0, 0.05);
 }
-
-/* The animation code */
-/*
-@keyframes example {
-  0%   {background-color: red;}
-  25%  {background-color: yellow;}
-  50%  {background-color: blue;}
-  100% {background-color: green;}
-}
-
-/* The element to apply the animation to */
-
-/*
-div {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  animation-name: example;
-  animation-duration: 4s;
-} */
+*/

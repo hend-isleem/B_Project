@@ -7,7 +7,7 @@ const divStyle = {
   textShadow: "1px 1px 2px white",
 };
 const white = {
-  color: "white",
+  color: "black",
   whiteSpace: "pre-line",
 };
 export default class Input extends Component {

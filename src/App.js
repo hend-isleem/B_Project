@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       {/* <h1>منحة ناهض الريس للأذكياء :)</h1> */}
-      <div className="responsive-image">
+      {/* <div className="responsive-image">
         <img src={pic1} alt="" className="responsive-image__image1"></img>
         <header className="App-header">
           <Input />
@@ -16,8 +16,13 @@ function App() {
       </div>
       <footer className="footer">
         <img src={logoo} className="under" alt="logo" />
+      </footer> */}
+      <header className="App-header">
+        <Input />
+      </header>
+      <footer className="footer">
+        <h3>شكرًا لك لخوض تجربة التحدّي، بالتوفيق دومًا✨</h3>
       </footer>
-
     </div>
   );
 }

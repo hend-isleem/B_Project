@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 const divStyle = {
-  color: "#79c45c",
+  color: "#44342c",
   fontSize: "0.9em",
   direction: "rtl",
 };
-const orange = {
-  color: "#f59121",
+const color = {
+  color: "#449624",
 };
-const blue = {
-  color: "#0088cc",
+const color2 = {
+  color: "#f69121",
 };
 
 export default class StudentsList extends Component {
@@ -18,9 +18,9 @@ export default class StudentsList extends Component {
         {this.props.students.map((std) => (
           <li key={std.id} style={divStyle}>
             <span>الطالب: </span>
-            <span style={orange}>{std.name}</span>
+            <span style={color2}>{std.name}</span>
             <span> و حالته: </span>
-            <span style={blue}>{std.state.name}</span>
+            <span style={color}>{std.state.name}</span>
           </li>
         ))}
       </ul>
