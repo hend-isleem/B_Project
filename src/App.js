@@ -1,8 +1,8 @@
 import "./App.css";
 import Input from "./componenets/Input";
-import logoo from "./pics/unnamed11.png";
-import pic1 from "./pics/brain11.png";
-import pic2 from "./pics/brain22.png";
+// import logoo from "./pics/unnamed11.png";
+// import pic1 from "./pics/brain11.png";
+// import pic2 from "./pics/brain22.png";
 function App() {
   return (
     <div className="App">

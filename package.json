@@ -29,7 +29,7 @@
     "start": "concurrently \"cd backEnd && npm run server\" \"react-scripts start\"",
     "dev": "(cd backEnd && npm run server) & react-scripts start",
     "server": "nodemon backEnd/server.js",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install && react-scripts build"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=true npm install && react-scripts build"
   },
   "eslintConfig": {
     "extends": [
