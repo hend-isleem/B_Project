@@ -93,24 +93,25 @@
 
 input {
   display: inline-block;
-  font-size: 0.75em;
+  font-size: 1em;
   margin-bottom: 1em;
   padding: 0.25em 0.25em;
   width: 15em;
+  border-radius: 12px;
 }
 
 button {
   background-color: #0f77b8;
   border: 0.5px solid #0f77b8;
-  border-radius: 1px;
+  border-radius: 12px;
   color: #ffffff;
   display: inline-block;
-  font-size: 0.75em;
+  font-size: 1em;
   font-weight: normal;
   /* line-height: 0.75em; */
   /* margin-right: 0.3125em; */
   /* margin-bottom: 0.3125em; */
-  padding: 0.35em;
+  padding: 0.25em;
   width: auto;
 }
 
