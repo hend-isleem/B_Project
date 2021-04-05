@@ -33,7 +33,7 @@
     "server": "nodemon backEnd/server.js",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install && react-scripts build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build"
+    "deploy": "gh-pages -b main -d build"
   },
   "eslintConfig": {
     "extends": [
