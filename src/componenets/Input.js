@@ -17,6 +17,8 @@ export default class Input extends Component {
       students: [],
       email: "",
       msg: "",
+      link: "",
+      school: "",
     };
     this.handleChange = this.handleChange.bind(this);
   }
@@ -34,10 +36,12 @@ export default class Input extends Component {
         if (res.data.length === 0) {
           this.setState({
             msg: `لم يتم العثور على طالب لهذا البريد..
-              للإستفسار: التواصل على hendisleem@gmail.com :)`,
+              للإستفسار: التواصل على  `,
+            link: "https://www.facebook.com/mindschallenge/",
+            school: "صفحة المسابقة على فيس بوك",
           });
         } else {
-          this.setState({ msg: "" });
+          this.setState({ msg: "", link: "", school: "" });
         }
         console.log(res.data);
       });
@@ -68,7 +72,10 @@ export default class Input extends Component {
         {/* <h1>hi from input! :)</h1>
         <h2>email is: {this.state.email}</h2> */}
         {/* {console.log(this.state.students)} */}
-        <h5 style={(divStyle, white)}>{this.state.msg}</h5>
+        <h5 style={(divStyle, white)}>
+          {this.state.msg}
+          <a href={this.state.link}>{this.state.school}</a>
+        </h5>
         <StudentsList students={this.state.students} />
       </div>
     );
