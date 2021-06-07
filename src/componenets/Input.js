@@ -74,7 +74,9 @@ export default class Input extends Component {
         {/* {console.log(this.state.students)} */}
         <h5 style={(divStyle, white)}>
           {this.state.msg}
-          <a href={this.state.link}>{this.state.school}</a>
+          <a href={this.state.link} target="_blank">
+            {this.state.school}
+          </a>
         </h5>
         <StudentsList students={this.state.students} />
       </div>
